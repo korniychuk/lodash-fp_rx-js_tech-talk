@@ -1,8 +1,5 @@
 # TechTalk: Lodash/fp + RxJS
 
-* Wallaby JS works out of the box without any additional config  
-  Notice: How to run in "Without Configuration" mode ([Official Wallaby JS Guide](https://wallabyjs.com/docs/intro/config.html#automatic-configuration))
-
 ## How to run
 
 1. Clone as is
