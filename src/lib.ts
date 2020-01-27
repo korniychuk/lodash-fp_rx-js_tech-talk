@@ -29,6 +29,16 @@ export const users: User[] = [
     },
     age: 20,
   },
+  {
+    id: 2,
+    email: 'kate@gmail.com',
+    role: EUserRole.Customer,
+    name: {
+      first: 'Kate',
+      last: 'Petrova',
+    },
+    age: 19,
+  },
 ];
 
 export const users$ = $$.of(users);
