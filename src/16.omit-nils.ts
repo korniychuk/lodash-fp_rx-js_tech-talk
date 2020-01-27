@@ -6,7 +6,7 @@ import { EUserRole, subOnce, User, usersWithNil$ } from './lib';
 
 // const omitNils: <T>(v: (T | null | undefined)[]) => T[] = __.filter(_.negate(__.isNil));
 
-const userInfo$: $$.Observable<User[]> = usersWithNil$.pipe(
+const users$: $$.Observable<User[]> = usersWithNil$.pipe(
 
   $.map((users: (User | null | undefined)[]): User[] => users.filter((v): v is User => v !== null && v !== undefined)),
   // $.map((users: (User | null | undefined)[]): User[] => users.filter((v): v is User => v != undefined)),
@@ -18,4 +18,4 @@ const userInfo$: $$.Observable<User[]> = usersWithNil$.pipe(
   // $.map(omitNils),
 );
 
-subOnce(userInfo$); /* ? $.map(v => v && v.email) */
+subOnce(users$); /* ? $.map(v => v && v.email) */
