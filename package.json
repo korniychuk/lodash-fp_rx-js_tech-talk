@@ -1,17 +1,10 @@
 {
-  "name": "wallaby-ts-webpack",
+  "name": "tech-talk_lodash-fp_rx-js",
   "description": "",
   "license": "MIT",
   "private": true,
   "version": "1.0.0",
-  "bugs": {
-    "url": "https://github.com/korniychuk/wallaby-ts-webpack-starter/issues"
-  },
-  "homepage": "https://github.com/korniychuk/wallaby-ts-webpack-starter#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/korniychuk/wallaby-ts-webpack-starter.git"
-  },
+  "homepage": "https://github.com/korniychuk/lodash-fp_rx-js_tech-talk",
   "engines": {
     "node": "^12.14.1",
     "npm": "^6.13.4",
@@ -20,13 +13,10 @@
   "scripts": {
     "start": "ts-node",
     "build": "rimraf dist && tsc -p tsconfig.build.json",
-    "build:prod": "npm run build",
     "lint": "eslint --ext .js,.ts src/**",
     "lint:fix": "npm run lint -- --fix",
-    "pre-push": "npm run lint && npm run test && npm run build:prod && npm run tpl-repo:check",
     "preinstall": "node ./tools/check-yarn.js",
     "test": "jest -c jest.config.js",
-    "test:watch": "npm run test -- --watch",
     "tpl-repo": "tools/merge-with-repository-template.sh",
     "tpl-repo:check": "npm run tpl-repo -- check",
     "tpl-repo:merge": "npm run tpl-repo -- merge"
@@ -49,17 +39,10 @@
     "eslint-plugin-import": "~2.19.1",
     "eslint-plugin-promise": "~4.2.1",
     "eslint-plugin-unicorn": "~14.0.1",
-    "husky": "~3.1.0",
     "jest": "~24.9.0",
     "jest-extended": "~0.11.4",
     "rimraf": "~3.0.0",
     "typescript": "~3.7.3",
     "ts-node": "~8.6.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run pre-push",
-      "post-merge": "IS_YARN=true yarn install"
-    }
   }
 }
