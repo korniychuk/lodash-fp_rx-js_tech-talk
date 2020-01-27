@@ -40,7 +40,9 @@ export const users: User[] = [
     age: 19,
   },
 ];
+const usersWithNil = [null, users[0], undefined, users[1], null];
 
+export const usersWithNil$ = $$.of(usersWithNil);
 export const users$ = $$.of(users);
 export const user$ = $$.of(users[0]);
 
