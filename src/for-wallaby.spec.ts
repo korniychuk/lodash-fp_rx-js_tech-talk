@@ -1,8 +1,8 @@
-import './01.is-admin-role';
-import './02.is-admin-user';
-import './03.filter-admins';
-import './04.user-info';
-import './05.users-info';
-import './06.omit-nils';
+import './11.is-admin-role';
+import './12.is-admin-user';
+import './13.filter-admins';
+import './14.user-info';
+import './15.users-info';
+import './16.omit-nils';
 
 it('ok', () => {});
