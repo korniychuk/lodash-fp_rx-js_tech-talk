@@ -16,4 +16,5 @@ const res$ = $$.combineLatest([users$, roles$, someStr$]).pipe(
   // $.filter(__.every(Boolean)),
 );
 
+// without wallaby
 res$.subscribe(console.log.bind(console, 'NEXT:'));
