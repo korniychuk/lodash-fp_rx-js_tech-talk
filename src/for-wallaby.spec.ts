@@ -4,5 +4,6 @@ import './13.filter-admins';
 import './14.user-info';
 import './15.users-info';
 import './16.omit-nils';
+import './17.combineLatest-omit-nil';
 
 it('ok', () => {});
